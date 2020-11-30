@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <title>02 Lightbulb – Source</title>
+
+        <style>
+        #myImage{
+            background: url(pic_bulboff.gif);
+            height: 180px;
+            width: 100px;
+        }
+
+        </style>
+    </head>
+    <body>
+
+        <h2>Javascript – Source (src)</h2>
+
+        <p>We can change the src attribute to set a new image.</p>
+
+        <button onclick = "lighton()">Turn on the light</button>
+
+        <img id="myImage" src = "pic_bulboff.gif">
+
+        <button onclick = "lightoff()">Turn off the light</button>
+        
+
+        <script>
+        function lighton(){
+            document.getElementById("myImage").src = "pic_bulbon.gif";
+        }
+
+        function lightoff(){
+            document.getElementById("myImage").src = "pic_bulboff.gif";
+        }
+
+        </script>
+
+        
+        
+        
+       
+
+    </body>
+</html>

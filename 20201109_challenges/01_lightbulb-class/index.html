@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>01 Lightbulb – Class</title>
+
+        <style>
+        #myImage.on {
+            background: url(pic_bulbon.gif) no-repeat; 
+            background-size: cover;
+            display: block;
+        }
+
+        #myImage {
+            background: url(pic_bulboff.gif) no-repeat;
+            background-size: cover;
+            height: 180px;
+            width: 100px;
+        }
+        </style>
+    </head>
+    <body>
+
+        <h2>Javascript – Change Class</h2>
+
+        <p>We can use classList.toggle to add/remove the class on.</p>
+
+        <button id="buttonOn">Toggle Light</button>
+
+        <div id="myImage" style="width:100px;height:180px;"></div>
+        
+        <script>
+        
+        const button = document.getElementById('buttonOn');
+        button.addEventListener('click', function(){
+            document.getElementById("myImage").classList.toggle("on");
+        });
+        </script>
+
+    </body>
+</html>
